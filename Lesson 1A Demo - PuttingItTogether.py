@@ -1,7 +1,7 @@
 # NR426 Lesson 1A Putting It Together Demo Script
 # Written by Elizabeth Tulanowski
 
-# pseudocode
+# Working with variables, numbers, strings, concatentation, and indexing/slicing
 
 #Import modules
 import os, math
@@ -48,3 +48,4 @@ print(f"The full path to the data is: {fullpath} and has {len(fullpath)} charact
 from math import *
 #math.sqrt(sqmi)
 sqrt(sqmi)
+
