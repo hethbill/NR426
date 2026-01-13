@@ -1,11 +1,13 @@
-# Reading from a text file
+# Reading values from a text file to find the longest name
 #NR 426 Demo Lesson 1c
 
 import os, sys
-path = r"C:\Users\MapGirl\Documents\NR426-427\NR426 SP2019\Lesson 1 - Python Basics"
+path = r"C:\Users\Documents\NR426\Lesson 1 - Python Basics"
 file = "Student Names.txt"
 full = os.path.join(path, file)
 print (full)
+
+#Check that the file exists
 if not os.path.exists(full):
      print ("file " + full + " doesn't exist")
      print ("Exiting script")
@@ -30,5 +32,7 @@ with open(full, "r") as f:
             a = len_n  #This sets the value of a to the length of the current name
             longestname = n[0:-1]   #  This sets the value of longest name to the current name
         #print (n[0:-1] + ": " +str(len(n)))
+# Alternatively use the max function with key=len
 
 print ("The person with the longest name is {0}".format(longestname))
+
