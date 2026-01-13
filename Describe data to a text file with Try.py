@@ -8,7 +8,7 @@
 import arcpy
 ## ******************************** ##
 # Set some variables #  C H A N G E   T H E S E :
-txtfile = r"C:\Users\MapGirl\Documents\NR426-427\describing.txt"       # Full path to txt file you want to create
+txtfile = r"C:\Users\Documents\NR426\describing.txt"       # Full path to txt file you want to create
 arcpy.env.workspace = r"C:\Data\Beth_Data"  # Full path to workspace
 data = "NorthwestRoadTrip.gdb"              # Name only of data to describe
 ## ******************************** ##
@@ -28,5 +28,6 @@ outFile.write("The full path is " + dsc.catalogpath+ "\n")
 
 # Close files
 outFile.close()
+
 
 print ("Finished")
